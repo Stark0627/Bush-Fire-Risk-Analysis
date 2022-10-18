@@ -14,10 +14,16 @@ The source code for the project is strored in the university's GitHub repository
   - RFSNSW_BFPL.shp: gid, category, shape leng, shape area, geom
 
 - **Fire Risk Score Formula:**
-  Fire_risk = S(z(population_density)+z(dwelling_density, business_density)+z(bfpl_density)−z(assistive_service_density)
   
+  
+  
+  Fire_risk = S(z(population_density)+z(dwelling_density, business_density)+z(bfpl_density)−z(assistive_service_density)
+
   
   With S being the logistic function (sigmoid function), and z the *z-score* (”standard score”) of a measure - the number of standard deviations from the mean (assuming a normal distribution):
+  
+  
+
   z(measure, x) = x - avg_measure/stddev_measure
   
   | Measure                   | Definition                                                   | Risk | Data Source        |
