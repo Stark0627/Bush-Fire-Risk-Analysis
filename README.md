@@ -14,16 +14,12 @@ The source code for the project is strored in the university's GitHub repository
   - RFSNSW_BFPL.shp: gid, category, shape leng, shape area, geom
 
 - **Fire Risk Score Formula:**
-  $$
-  Fire_-risk = S(z(population_-density)+z(dwelling_-density, business_-density)+z(bfpl_-density)−z(assistive_-service_-density)
-  $$
+  Fire_risk = S(z(population_density)+z(dwelling_density, business_density)+z(bfpl_density)−z(assistive_service_density)
   
-
+  
   With S being the logistic function (sigmoid function), and z the *z-score* (”standard score”) of a measure - the number of standard deviations from the mean (assuming a normal distribution):
-  $$
-  z(measure, x) = \frac{x - avg_{measure}}{stddev_{measure}}
-  $$
-
+  z(measure, x) = x - avg_measure/stddev_measure
+  
   | Measure                   | Definition                                                   | Risk | Data Source        |
   | ------------------------- | ------------------------------------------------------------ | ---- | ------------------ |
   | population_density        | population divided by neighbourhood’s land area              | +    | Neighbourhoods.csv |
@@ -31,7 +27,7 @@ The source code for the project is strored in the university's GitHub repository
   | business_density          | number of businesses divided by neighbourhood land area      | +    | BusinessStats.csv  |
   | bfpl_density              | area and category of BFPL divided by neighbourhood land area | +    | RFSNSW BFPL.shp    |
   | assistive_service_density | number of assistive services divided by neighbourhood land area | -    | BusinessStats.csv  |
-
+  
 - **Our Task:**
 
   - Built a database using PostgreSQL that integrates data from the following sources:
