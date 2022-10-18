@@ -2,7 +2,7 @@ The source code for the project is strored in the university's GitHub repository
 
 - **Project Name:**  Bushfire Risk Analysis
 
-- **Project Member:** Cheng Zeng Meian Bao
+- **Project Member:** Cheng Zeng, Meian Bao
 
 - **Project Data Source:**  Several CSV files with Statistical Area 2 (SA2) data from the Australian Bureau of Statistics (ABS) and some bush fire prone land vegetation spatial data from the NSW Rural Fire Service
 
